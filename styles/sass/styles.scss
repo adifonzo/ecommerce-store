@@ -7,7 +7,9 @@
 // pastel blue: #d3f0f9 
 // white: #fff; 
 
-
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/typography";
 
 // HEADINGS:
 // h1: 28px;
