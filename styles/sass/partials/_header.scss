@@ -1,0 +1,17 @@
+@use "./variables";
+
+header {
+    background: variables.$tertiary;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .headerImgContainer {
+        width: 45%;
+    }
+
+    .headerContentContainer {
+        width: 55%;
+        padding: 0 90px;
+    }
+}
