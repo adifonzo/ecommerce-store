@@ -34,5 +34,39 @@
 }
 
 .slideOutNav {
-    display: none;
+    padding: 35px 50px;
+    border-right: 1px solid variables.$secondary;
+    width: 100%;
+    max-width: 506px;
+    height: 100vh;
+    background-color: variables.$primary;
+    color: variables.$solidWhite;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -506px;
+    z-index: 20;
+    transition: 0.75s;
+    .mainMenu {
+        a {
+          font-family: "Young Serif";
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+          color: rgba($color: White, $alpha: 1);
+          &:hover {
+            color: rgba($color: White, $alpha: 0.5);
+          }
+          &:focus {
+            color: rgba($color: White, $alpha: 0.5);
+          }
+        }
+    }  
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        button {
+        padding: 10px 0 10px 20px;
+        }
+    }
 }

@@ -9,10 +9,40 @@ header {
     margin-top: 70px;
     .headerImgContainer {
         width: 45%;
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
     }
-
-    .headerContentContainer {
+    .headerContent {
         width: 55%;
-        padding: 0 90px;
+        color: variables.$primary;
+        .headerContentContainer {
+            width: 55%;
+            padding: 0 90px;
+        }
     }
+}
+
+.contactHeader {
+    background-color: variables.$quaternary;
+    padding-top: 120px;
+
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+.contactHeader::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/wave.svg);
+    background-color: variables.$quaternary;
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
 }

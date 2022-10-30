@@ -4,38 +4,46 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    width: 100%;
     .items {
-        // width: 40%;
         width: 40%;
         margin: 50px 25px 25px;
         border-radius: 10%;
         padding: 45px;
         text-align: center;
         transition: 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &:hover,
         &:focus {
             transform: scale(0.95);
         }
         
         img {
+            width: 100%;
             border-radius: 10%;
             margin-bottom: 20px;
         }
     }
 
-    .itemOne {
-        background: variables.$quinary;
+        .itemOne {
+            background: variables.$quinary;
+        }
+
+        .itemTwo {
+            background: variables.$secondary;
+        }
+
+        .itemThree {
+            background: variables.$tertiary
+        }
+
+        .itemFour {
+            background: variables.$quaternary
+        }
     }
 
-    .itemTwo {
-        background: variables.$secondary;
-    }
 
-    .itemThree {
-        background: variables.$tertiary
-    }
-
-    .itemFour {
-        background: variables.$quaternary
-    }
-}
+    

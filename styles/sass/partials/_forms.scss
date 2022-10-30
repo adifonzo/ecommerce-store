@@ -1,0 +1,78 @@
+@use "./variables";
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+input, textarea {
+    padding: 00 10px 5px;
+    border: none;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: variables.$bodyFont;
+
+    &::placeholder {
+        font-size: 0.8rem;
+        color: variables.$primary;
+        opacity: 1;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    &:focus {
+        border-bottom: 1px solid variables.$primary;
+    }
+}
+
+input {
+    border-bottom: 1px solid #eee;
+}
+
+textarea {
+    min-height: 130px;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+select {
+    appearance: none;
+    display: block;
+    font-family: variables.$bodyFont;
+    color: variables.$primary;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: variables.$solidWhite;
+    background-image: url(../assets/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+option {
+    font-family: variables.$bodyFont, sans-serif;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    
+    label {
+        font-size: 0.8rem;
+    }
+
+    input {
+        margin: 0 10px 0 0;
+        accent-color: variables.$primary;
+    }
+}
+
