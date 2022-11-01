@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Contact</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
-    <!-- Skip Link -->
-    <a href="#mainContent" class="skipLink">Skip to main content</a>
-
-	<!-- Nav Section -->
+   <!-- Nav Section -->
 	<nav class="navBar">
 		<div class="wrapper">
 			<!-- Slide Out Button -->
@@ -28,7 +24,7 @@
 							<li class="menuItem"><a href="#">FAQ</a></li>
 							<li class="menuItem"><a href="#">News</a></li>
 							<li class="menuItem"><a href="./contact.html">Contact</a></li>
-                            <li class="menuItem"><a href="./index.html">Home</a></li>
+							<li class="menuItem"><a href="./index.html">Home</a></li>
                             <li class="menuItem"><a href="./sale.html">Sale</a></li>
 						</ul>
 					</nav>
@@ -59,52 +55,27 @@
 				</div><!-- END .counter -->
 			</div><!-- END .cartFlex -->
 		</div><!-- END .wrapper -->
+
+		<!-- Slide Out Nav -->
 	</nav> <!-- END .navBar-->
 
-    <header class="contactHeader">
+    <header class="saleHeader">
+        <h5>Our Black Friday Blowout Sale Starts in</h5>
+    </header> <!-- saleHeader ends -->
+    <main>
         <div class="wrapper">
-            <div class="contactContent">
-                <h5>Contact</h5>
-                <h3>We're here to help</h3>
-                <p>Any other questions? Reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
-            </div>
-        </div>
-    </header>
+            <div class="saleContent">
+                <div class="timerValues" id="days">00</div>
+                <div class="timerValues" id="hours">00</div>
+                <div class="timerValues" id="minutes">00</div>
+                <div class="timerValues" id="seconds">00</div>
 
-    <main class="contact maincontent">
-        <div class="wrapper">
-            <form action="" method="" class="contactForm" name="contactForm">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" placeholder="Name" id="name">
-
-                <label for="surname" class="sr-only">Surname</label>
-                <input type="text" placeholder="Surname" id="surname">
-
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" placeholder="Email" id="email">
-
-                <label for="phone" class="sr-only">Phone</label>
-                <input type="tel" placeholder="Phone" id="phone">
-
-                <select name="reason" id="reason">
-                    <option value="initial" disabled selected>Reason for contacting</option>
-                    <option value="refund">Refund request</option>
-                    <option value="status">Order status update</option>
-                    <option value="praise">Praise!</option>
-                    <option value="complaint">General concerns</option>
-                  </select>
-            
-                  <label for="message" class="sr-only">Message for me</label>
-                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
-            
-                  <fieldset>
-                    <input type="checkbox" id="terms" />
-                    <label for="terms">I agree to the Terms & Conditions.</label>
-                  </fieldset>
-            
-                  <button>Send Message</button>
-            </form>
-        </div>
+                <h4>days</h4>
+                <h4>hours</h4>
+                <h4>minutes</h4>
+                <h4>seconds</h4>
+            </div> <!-- saleContent ends -->
+        </div> <!-- wrapper ends -->
     </main>
     <footer id="footer">
 		<div class="wrapper">
@@ -163,6 +134,6 @@
 			</div><!-- END .footerFlexContainer -->
 		</div><!-- END .wrapper -->
 	</footer>
-    <script src="./script.js"></script>
 </body>
+<script src="./script.js"></script>
 </html>
