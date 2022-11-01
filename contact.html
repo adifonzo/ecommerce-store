@@ -16,8 +16,22 @@
 	<nav class="navBar">
 		<div class="wrapper">
 			<!-- Slide Out Button -->
-			<button class="menuButton">
+			<button class="menuIcon">
 				<img src="./assets/menu-button.svg" alt="Button to Open Slide out Navigation Menu">
+
+				<div class="openMenu is-active">
+
+					<nav>
+						<ul class="navMenu">
+							<li class="menuItem"><a href="#">Shop</a></li>
+							<li class="menuItem"><a href="#">About</a></li>
+							<li class="menuItem"><a href="#">FAQ</a></li>
+							<li class="menuItem"><a href="#">News</a></li>
+							<li class="menuItem"><a href="./contact.html">Contact</a></li>
+                            <li class="menuItem"><a href="./index.html">Home</a></li>
+						</ul>
+					</nav>
+				</div>
 			</button>
 
 			<!-- Logo -->
@@ -29,7 +43,7 @@
 
 			<div class="cartFlex">
 				<!-- Search -->
-				<button class="menuIcon">
+				<button class="searchButton">
 					<img src="./assets/search.svg" alt="Search Button" class="searchIcon">
 				</button>
 
@@ -46,26 +60,7 @@
 		</div><!-- END .wrapper -->
 
 		<!-- Slide Out Nav -->
-		<div class="slideOutNav">
-			<!-- Close Button -->
-			<div class="navCloseButton">
-				<button>
-					<img src="./assets/menu-close.svg" alt="Close Slide Out Menu">
-				</button>
-			</div>
-
-			<!-- Nav & UL -->
-			<nav>
-				<ul class="mainMenu">
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div><!-- END .SlideOutNav -->
-	</nav>
+	</nav> <!-- END .navBar-->
 
     <header class="contactHeader">
         <div class="wrapper">
@@ -169,5 +164,6 @@
 			</div><!-- END .footerFlexContainer -->
 		</div><!-- END .wrapper -->
 	</footer>
+    <script src="./script.js"></script>
 </body>
 </html>
